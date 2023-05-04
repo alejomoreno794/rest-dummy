@@ -1,0 +1,247 @@
+{
+    "value_proposal": {
+        "id": 6,
+        "rating": {
+            "code": "A"
+        },
+        "product": {
+            "id": 1,
+            "name": "TarjetaMeli",
+            "site": "MLB",
+            "brand": "Visa",
+            "enable": true,
+            "brand_type": "Gold"
+        },
+        "segment": {
+            "code": "default"
+        },
+        "version": 2,
+        "settings": {
+            "time": {
+                "grace_period": 1,
+                "days_between_due_and_close": 7,
+                "due_date_change_parameters": {
+                    "due_day_change_quantity": 5,
+                    "time_between_due_day_changes": 2,
+                    "extra_due_day_change_activated": false,
+                    "time_between_activation_and_due_day_change_request": 15,
+                    "time_period_for_available_changes": 15
+                },
+                "waiting_day_for_transaction_approval": 1,
+                "minimun_day_between_consumption_and_close": 5,
+                "waiting_day_for_pre_authorized_transaction_expiration": 120
+            },
+            "limits": {
+                "ecosystem_limit": 30,
+                "additional_limit": 3,
+                "withdrawal_limit": 30,
+                "afd_limit_reserve": {
+                    "amount_usd": 50.3
+                },
+                "max_limit_permitted": 10000,
+                "min_limit_permitted": 100,
+                "max_withdrawal_limit": 1000,
+                "min_withdrawal_limit": 0,
+                "temporal_limit_percentage": 10,
+                "overdraft_limit_percentage": 10,
+                "range_limits_for_proposals": {
+                    "max_limit": 5000,
+                    "min_limit": 1000
+                },
+                "installment_consumption_limit": 100,
+                "one_payment_consumption_limit": 100,
+                "additional_credit_limit_percentage": 10
+            },
+            "charges": {
+                "annual_charge": {
+                    "amount": 100,
+                    "subtype": "by_activation",
+                    "exempted": false,
+                    "fundable": true,
+                    "installments": 3
+                },
+                "overlimit_charge": {
+                    "amount": 100,
+                    "subtype": "by_activation",
+                    "exempted": false,
+                    "fundable": true,
+                    "installments": 3
+                },
+                "due_date_change_charge": {
+                    "amount": 100,
+                    "exempted": false,
+                    "fundable": true,
+                    "installments": 3
+                },
+                "card_replacement_charge": {
+                    "amount": 100,
+                    "exempted": false,
+                    "fundable": true,
+                    "installments": 3
+                },
+                "account_maintenance_charge": {
+                    "amount": 100,
+                    "exempted": false,
+                    "fundable": true,
+                    "installments": 3
+                },
+                "account_regularized_charge": {
+                    "amount": 100,
+                    "exempted": false,
+                    "fundable": true,
+                    "installments": 3
+                },
+                "discharged_by_replacement_charge": {
+                    "amount": 100,
+                    "exempted": false,
+                    "fundable": true,
+                    "installments": 3
+                }
+            },
+            "expenses": {
+                "annuity": 179.88,
+                "daily_iof": 15.0,
+                "tac_charge": {
+                    "amount_brl": 9.9
+                },
+                "regular_iof": 0.008,
+                "estimated_afd": 25,
+                "additional_iof": 0.005,
+                "overdraft_cost": 5,
+                "maintenance_cost": 150,
+                "international_iof": 0.0538,
+                "revolving_parcelled": 80.1,
+                "late_payment_penalty": 150.0,
+                "overdue_entry_charge": 150,
+                "current_exchange_rate": "issuer",
+                "punitive_interest_fee": 100.5
+            },
+            "financial": {
+                "advance_and_financing_parameters": {
+                    "financing_bill_rate": 10.0,
+                    "effective_monthly_rate": 10.0,
+                    "minimum_installment_amount": 150.0,
+                    "maximum_payment_amount_percentage": 15.0,
+                    "minimum_payment_amount_percentage": 5.0
+                },
+                "financial_adjustment_approval_parameters": {
+                    "minimum_amount:": 100.52,
+                    "maximum_account_transactions": 100,
+                    "maximum_operator_transactions": 50,
+                    "frequency_transactions_account": "week",
+                    "frequency_transactions_operator": "month"
+                }
+            },
+            "interests": {
+                "overdue_interest": 10,
+                "revolving_interest": 10,
+                "withdrawal_interest": 0.5,
+                "refinancing_interest": 1,
+                "late_overdue_interest": 1,
+                "length_of_interest_calculation": "due_to_due"
+            },
+            "challenges": {
+                "min_consumption_annuity_bonus": 50
+            },
+            "commercial": {
+                "mcc_blacklist": [
+                    5799,
+                    5800
+                ]
+            },
+            "installment_plans": {
+                "sales_plan": [
+                    {
+                        "type": "percentage",
+                        "interest": 20.5,
+                        "installment": 3
+                    },
+                    {
+                        "type": "percentage",
+                        "interest": 30.5,
+                        "installment": 6
+                    },
+                    {
+                        "type": "percentage",
+                        "interest": 40.5,
+                        "installment": 9
+                    },
+                    {
+                        "type": "percentage",
+                        "interest": 50.5,
+                        "installment": 12
+                    }
+                ],
+                "financing_interest": [
+                    {
+                        "type": "percentage",
+                        "interest": 20.5,
+                        "installment": 3,
+                        "additional_setting": {
+                            "iof": 0.5
+                        }
+                    },
+                    {
+                        "type": "percentage",
+                        "interest": 30.5,
+                        "installment": 6
+                    },
+                    {
+                        "type": "percentage",
+                        "interest": 40.5,
+                        "installment": 9
+                    },
+                    {
+                        "interest": 50.5,
+                        "installment": 12
+                    }
+                ],
+                "discount_overdue_plan": [
+                    {
+                        "plan": [
+                            {
+                                "type": "percentage",
+                                "interest": 10.1,
+                                "installment": 3
+                            },
+                            {
+                                "type": "percentage",
+                                "interest": 8.8,
+                                "installment": 6
+                            },
+                            {
+                                "type": "percentage",
+                                "interest": 29.2,
+                                "installment": 12
+                            }
+                        ],
+                        "max_day": 90,
+                        "min_day": 67
+                    },
+                    {
+                        "plan": [
+                            {
+                                "type": "percentage",
+                                "interest": 10.1,
+                                "installment": 3
+                            },
+                            {
+                                "type": "percentage",
+                                "interest": 8.8,
+                                "installment": 6
+                            },
+                            {
+                                "type": "percentage",
+                                "interest": 29.2,
+                                "installment": 12
+                            }
+                        ],
+                        "max_day": 120,
+                        "min_day": 91
+                    }
+                ]
+            }
+        },
+        "version_date": "2023-01-13T17:52:05.878045-03:00[America/Argentina/Buenos_Aires]"
+    }
+}
